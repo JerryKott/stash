@@ -22,6 +22,7 @@ chmod a+x macx/stash
 
 TARGET=/usr/local/stash
 mkdir $TARGET
+mkdir $TARGET/macx
 cp -a macx/stash32 $TARGET/macx/
 cp -a macx/stash $TARGET/
 cp -a stash.im $TARGET/

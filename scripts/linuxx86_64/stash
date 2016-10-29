@@ -1,0 +1,3 @@
+#!/bin/sh
+
+exec /usr/local/stash/linuxx86_64/stash64 /usr/local/stash/stash.im -filein "$@"
