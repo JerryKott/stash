@@ -32,6 +32,4 @@ curl -o examples.zip https://raw.githubusercontent.com/JerryKott/stash/master/ex
 unzip examples.zip
 mv examples $TARGET/
 
-rm -rf *
-
 popd
