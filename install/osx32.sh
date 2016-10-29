@@ -6,7 +6,7 @@ echo $TEMP
 pushd $TEMP
 
 #Get and unpack the VM
-curl -o bin.zip https://github.com/JerryKott/stash/tree/master/bin/macx.zip
+curl -o bin.zip https://github.com/JerryKott/stash/blob/master/bin/macx.zip
 unzip bin.zip
 chmod a+x macx/stash32
 
