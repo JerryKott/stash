@@ -15,9 +15,9 @@ wget -O image.zip https://raw.githubusercontent.com/JerryKott/stash/master/image
 unzip image.zip
 
 #Get and unpack the installation script
-wget -O script.zip https://raw.githubusercontent.com/JerryKott/stash/master/scripts/macx.zip
+wget -O script.zip https://raw.githubusercontent.com/JerryKott/stash/master/scripts/linuxx86_64.zip
 unzip script.zip
-chmod a+x macx/stash
+chmod a+x linuxx86_64/stash
 
 
 TARGET=/usr/local/stash
@@ -31,7 +31,5 @@ cp -a stash.im $TARGET/
 wget -O examples.zip https://raw.githubusercontent.com/JerryKott/stash/master/examples.zip
 unzip examples.zip
 mv examples $TARGET/
-
-rm -rf *
 
 popd
