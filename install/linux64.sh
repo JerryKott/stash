@@ -6,16 +6,16 @@ echo $TEMP
 pushd $TEMP
 
 #Get and unpack the VM
-curl -o bin.zip https://raw.githubusercontent.com/JerryKott/stash/master/bin/linuxx86_64.zip
+wget -O bin.zip https://raw.githubusercontent.com/JerryKott/stash/master/bin/linuxx86_64.zip
 unzip bin.zip
 chmod a+x linuxx86_64/stash64
 
 #Get and unpack the stash image
-curl -o image.zip https://raw.githubusercontent.com/JerryKott/stash/master/image/image.zip
+wget -O image.zip https://raw.githubusercontent.com/JerryKott/stash/master/image/image.zip
 unzip image.zip
 
 #Get and unpack the installation script
-curl -o script.zip https://raw.githubusercontent.com/JerryKott/stash/master/scripts/macx.zip
+wget -O script.zip https://raw.githubusercontent.com/JerryKott/stash/master/scripts/macx.zip
 unzip script.zip
 chmod a+x macx/stash
 
@@ -28,7 +28,7 @@ cp -a linuxx86_64/stash $TARGET/
 cp -a stash.im $TARGET/
 
 #Get and unpack examples.
-curl -o examples.zip https://raw.githubusercontent.com/JerryKott/stash/master/examples.zip
+wget -O examples.zip https://raw.githubusercontent.com/JerryKott/stash/master/examples.zip
 unzip examples.zip
 mv examples $TARGET/
 
