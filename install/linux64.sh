@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Create a temp directory first
-TEMP=`mktemp -d -t 'stash'`
+TEMP=`mktemp -d -t 'stash.XXXXXX'`
 echo $TEMP
 pushd $TEMP
 
